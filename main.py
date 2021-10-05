@@ -13,3 +13,9 @@ bg = pygame.image.load('images/space.jpg')
 font = pygame.font.SysFont('comicsans',50,True,True)
 score = 0
 pygame.display.set_icon(icon)
+
+player = Player(370,480,64,64)
+alien = Enemy(random.randint(0,736),random.randint(50,150),64,64,720)
+bullets = []
+aliens = [alien]
+shootLoop = 0
